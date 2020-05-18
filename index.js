@@ -74,7 +74,8 @@ client.on('message', msg => {
     }
   }
 });
-
+//crie um arquivo na pasta, chamado server_token e coloque o token do seu bot
+//ou substitua essa parte aqui por client.login( < seu token > );
 const fs = require("fs");
 fs.readFile("server_token",'utf-8',function(err,data){
   if(err)
