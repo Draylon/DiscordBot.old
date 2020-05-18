@@ -1,9 +1,5 @@
 const https = require('https');
 var api_data;
-var discord_data = {
-  username: "BitCoin",
-  content: "btc stonks\ndolar stinks"
-};
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
