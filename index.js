@@ -75,4 +75,12 @@ client.on('message', msg => {
   }
 });
 
-client.login('');
+const fs = require("fs");
+fs.readFile("server_token",'utf-8',function(err,data){
+  if(err)
+    throw err;
+  else{
+    client.login(data);
+  }
+})
+
